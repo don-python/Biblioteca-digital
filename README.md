@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📚 Biblioteca Digital
+# Biblioteca Digital
 ### Prototipo Release — Evaluación 4 (Desarrollo de Proyectos TI · SCRUM)
 
 Prototipo web interactivo en **HTML5, CSS3 y JavaScript modular** conectado a **Firebase** (*Authentication* y *Cloud Firestore*), desarrollado para la **Evaluación 4: Entrega Final de Producto y Cierre de Proyecto Ágil**.
@@ -9,7 +9,7 @@ Prototipo web interactivo en **HTML5, CSS3 y JavaScript modular** conectado a **
 
 ---
 
-## 🧭 Arquitectura del Repositorio
+## Arquitectura del Repositorio
 
 ```text
 biblioteca-digital-inacap/
