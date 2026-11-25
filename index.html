@@ -1,11 +1,138 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Biblioteca Digital INACAP">
+
+  <title>Biblioteca Digital INACAP</title>
+
+  <link rel="stylesheet" href="/src/css/styles.css">
 </head>
+
 <body>
-    
+
+  <header class="header">
+    <div class="container navbar">
+
+      <a href="#" class="logo">
+        <span class="logo-icon">B</span>
+        <span>Biblioteca <strong>Digital</strong></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#nosotros">Nosotros</a>
+      </nav>
+
+      <a href="#" class="btn-login">Iniciar sesión</a>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+
+        <div class="hero-text">
+          <span class="eyebrow">BIBLIOTECA DIGITAL INACAP</span>
+
+          <h1>
+            El conocimiento
+            <span>está a tu alcance.</span>
+          </h1>
+
+          <p>
+            Explora, descubre y accede a recursos bibliográficos
+            desde cualquier lugar. Tu próximo aprendizaje comienza aquí.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#catalogo" class="btn-primary">
+              Explorar catálogo
+            </a>
+
+            <a href="#" class="btn-secondary">
+              Acceder a mi cuenta
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="book-decoration">📚</div>
+          <div class="floating-card">
+            <span>✦</span>
+            <div>
+              <strong>Aprende sin límites</strong>
+              <small>Tu biblioteca, siempre disponible</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="search-section" id="catalogo">
+      <div class="container">
+
+        <div class="search-heading">
+          <span class="eyebrow">DESCUBRE NUEVOS RECURSOS</span>
+          <h2>¿Qué quieres aprender hoy?</h2>
+          <p>Busca libros, autores y material bibliográfico.</p>
+        </div>
+
+        <form class="search-box" id="search-form">
+          <span>⌕</span>
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Escribe un título, autor o palabra clave..."
+          >
+          <button type="submit">Buscar</button>
+        </form>
+
+        <p id="search-message" class="search-message"></p>
+
+      </div>
+    </section>
+
+    <section class="features" id="nosotros">
+      <div class="container features-grid">
+
+        <article class="feature-card">
+          <span class="feature-icon">📖</span>
+          <h3>Catálogo digital</h3>
+          <p>Encuentra recursos bibliográficos para complementar tus estudios.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon">🔎</span>
+          <h3>Búsqueda sencilla</h3>
+          <p>Encuentra rápidamente el material que necesitas.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon">💻</span>
+          <h3>Acceso centralizado</h3>
+          <p>Gestiona tus consultas y actividades desde una sola plataforma.</p>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Biblioteca Digital INACAP · Proyecto en desarrollo</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/js/main.js"></script>
+
 </body>
 </html>
