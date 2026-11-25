@@ -23,7 +23,12 @@ biblioteca-digital-inacap/
 │   │   ├── auth.js               # Login por rol, clave segura, intentos fallidos y reset
 │   │   ├── estudiante.js         # Búsqueda, catálogo, préstamos y reservas
 │   │   ├── bibliotecario.js      # Validación de préstamos/devoluciones y gestión de libros
-│   │   └── admin.js              # Gestión de usuarios, restablecimiento y reportes
+│   │   ├── admin.js              # Gestión de usuarios, restablecimiento y reportes
+│   │   ├── guards.js             # Proteger páginas según el rol.
+│   │   ├── libros.js             # Consultar, crear, editar y eliminar libros.
+│   │   ├── prestamos.js          # Gestionar reservas.
+│   │   ├── reservas.js           # Gestionar reservas.
+│   │   └── validaciones.js       # Validar formularios y datos.
 │   └── 📁 pages/
 │       ├── estudiante.html       # Vista del Estudiante
 │       ├── bibliotecario.html    # Vista del Bibliotecario
