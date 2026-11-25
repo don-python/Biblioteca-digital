@@ -1,17 +1,22 @@
-
 // ========================================
 // VALIDACIONES DE REGISTRO
 // Biblioteca Digital INACAP
 // ========================================
 
-// Validar nombre completo
+// Validar nombre y apellido
 export function validarNombre(nombre) {
-    return nombre.trim().length >= 3 &&
-           /^[\p{L}\s'-]+$/u.test(nombre.trim());
+    if (typeof nombre !== "string") return false;
+
+    const valor = nombre.trim();
+
+    return valor.length >= 3 &&
+        /^[\p{L}\s'-]+$/u.test(valor);
 }
 
 // Limpiar RUT: elimina puntos, guiones y espacios
 export function limpiarRut(rut) {
+    if (typeof rut !== "string") return "";
+
     return rut
         .replace(/\./g, "")
         .replace(/-/g, "")
@@ -53,21 +58,16 @@ export function validarRut(rut) {
     return digitoCalculado === digitoIngresado;
 }
 
-// Validar formato de correo institucional
-// Los dominios permitidos se definirán antes de habilitar registros.
-
 // Validar correo institucional INACAP
 export function validarCorreoInstitucional(email) {
+    if (typeof email !== "string") return false;
+
     const correo = email.trim().toLowerCase();
 
-    // Comprobar formato del correo
-    const formatoValido = /^[^\s@]+@[^\s@]+$/.test(correo);
+    const formatoValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo);
 
-    if (!formatoValido) {
-        return false;
-    }
+    if (!formatoValido) return false;
 
-    // Comprobar dominio institucional
     const dominio = correo.split("@")[1];
 
     return dominio === "inacap.cl";
@@ -75,6 +75,8 @@ export function validarCorreoInstitucional(email) {
 
 // Validar contraseña segura
 export function validarPassword(password) {
+    if (typeof password !== "string") return false;
+
     const tieneLongitud = password.length >= 8;
     const tieneMayuscula = /[A-Z]/.test(password);
     const tieneMinuscula = /[a-z]/.test(password);
@@ -92,5 +94,7 @@ export function validarPassword(password) {
 
 // Comprobar que ambas contraseñas coincidan
 export function coincidenPasswords(password, confirmacion) {
-    return password === confirmacion;
+    return typeof password === "string" &&
+        typeof confirmacion === "string" &&
+        password === confirmacion;
 }
