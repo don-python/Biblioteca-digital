@@ -8,6 +8,30 @@ Prototipo web interactivo en **HTML5, CSS3 y JavaScript modular** conectado a **
 </div>
 
 ---
+## Avances actuales
+
+- Configuración del entorno de desarrollo con Vite.
+- Integración del SDK de Firebase.
+- Creación del proyecto en Firebase.
+- Configuración de autenticación con correo y contraseña.
+- Creación de la base de datos Cloud Firestore.
+- Configuración inicial de las reglas de seguridad.
+- Desarrollo de la primera pantalla de inicio.
+- Configuración de Git para el control de versiones.
+
+## Instalación
+
+Clonar el repositorio:
+
+    git clone https://github.com/don-python/Biblioteca-digital.git
+    cd Biblioteca-digital
+    npm install
+
+Crear un archivo `.env.local` en la raíz del proyecto con las credenciales de Firebase.
+
+## Ejecutar el proyecto
+
+    npm.cmd run dev
 
 ## Arquitectura del Repositorio
 
